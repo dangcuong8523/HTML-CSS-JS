@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DC ARGB Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg">
+    <!-- HEADER -->
+    <header class="nav">
+      <div class="logo">DC <span>ARGB</span> Store</div>
+      <nav class="menu">
+        <a href="#catalog" class="cta">Sản phẩm</a>
+        <a href="#news" class="cta">Tin tức</a>
+        <a href="#catalog" class="cta">Mua ngay</a>
+        <a href="javascript:void(0)" id="btn-account" class="cta">Tài khoản</a>
+        <a href="cart.html" id="btn-cart" class="cta"  >Giỏ hàng</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero">
+      <div class="hero-left">
+        <h1 class="title">Nâng cấp <span class="accent">ARGB</span> Setup</h1>
+        <p class="sub">Combo chuột – phím – tai nghe chuẩn Esports, sync ARGB toàn bộ góc máy, tối ưu cho game thủ PC.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#combos">Xem combo đỉnh</a>
+          <a class="btn btn-ghost" href="#catalog">Xem tất cả gear</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <article class="banner">
+          <div class="banner-inner">
+            <img src="images/combo_esports1.jpg" alt="Promo Banner">
+            <div class="banner-meta">
+              <div>
+                <h3>Khuyến mãi setup ARGB</h3>
+                <p class="price">Giảm đến 20%</p>
+              </div>
+              <button class="btn-buy">Mua ngay</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- COMBO -->
+    <section id="combos" class="combos">
+      <h2 class="section-title">Combo góc máy ARGB</h2>
+      <div class="combo-grid">
+        <article class="combo-card">
+          <h3>Starter ARGB</h3>
+          <p class="combo-items">Chuột gaming + Phím TKL ARGB + Lót chuột</p>
+          <p class="combo-price">3.990.000₫ <span class="badge">Tiết kiệm 15%</span></p>
+          <button class="card-btn">Xem chi tiết</button>
+        </article>
+        <article class="combo-card">
+          <h3>Esports Ready</h3>
+          <p class="combo-items">Chuột cao cấp + Phím full-size + Tai nghe RGB 7.1</p>
+          <p class="combo-price">6.490.000₫ <span class="badge">Best seller</span></p>
+          <button class="card-btn">Xem chi tiết</button>
+        </article>
+        <article class="combo-card">
+          <h3>Ultra Streamer</h3>
+          <p class="combo-items">Full gear + Mic + Đèn led decor góc stream</p>
+          <p class="combo-price">9.990.000₫ <span class="badge">Setup full</span></p>
+          <button class="card-btn">Xem chi tiết</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section id="catalog" class="catalog">
+      <div class="catalog-header">
+        <h2 class="section-title">Sản phẩm nổi bật</h2>
+        <div class="search-box">
+          <input class="search-input" type="text" placeholder="Tìm chuột, phím, tai nghe...">
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">Tất cả</button>
+          <button class="filter-tab" data-filter="mouse">Chuột</button>
+          <button class="filter-tab" data-filter="keyboard">Bàn phím</button>
+          <button class="filter-tab" data-filter="headset">Tai nghe</button>
+          <button class="filter-tab" data-filter="combo">Combo</button>
+        </div>
+      </div>
+      <!-- QUAN TRỌNG: class grid + id product-grid -->
+      <div class="grid" id="product-grid" style="margin-top:1.2rem;"></div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust">
+      <div class="trust-item">Hàng chính hãng 100%</div>
+      <div class="trust-item">Bảo hành 24 tháng</div>
+      <div class="trust-item">Giao nhanh toàn quốc</div>
+      <div class="trust-item">Hỗ trợ kỹ thuật cho game thủ</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>© <strong>DC ARGB Store</strong> • Thiết kế ARGB • Demo</div>
+      <div class="socials">RGB WAVE • DARK MODE</div>
+    </footer>
+
+    <div class="scanlines"></div>
+  </div>
+
+  <!-- JS: products PHẢI load trước script -->
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

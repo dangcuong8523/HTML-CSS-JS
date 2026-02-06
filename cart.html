@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Giỏ hàng | DC ARGB Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page-bg">
+
+  <!-- HEADER -->
+  <header class="nav">
+    <div class="logo">DC <span>ARGB</span> Store</div>
+    <nav class="menu">
+      <a href="index.html" class="cta">Trang chủ</a>
+      <a href="shop.html" class="cta">Sản phẩm</a>
+      <a href="cart.html" class="cta active">Giỏ hàng</a>
+    </nav>
+  </header>
+
+  <!-- CART -->
+  <section class="cart-page">
+    <h2 class="section-title">🛒 Giỏ hàng của bạn</h2>
+
+    <div class="cart-layout">
+
+      <!-- LIST -->
+      <div class="cart-list" id="cart-items">
+        <!-- JS render -->
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="cart-summary">
+        <h3>Tóm tắt đơn hàng</h3>
+
+        <div class="summary-row">
+          <span>Tạm tính</span>
+          <span id="cart-subtotal">0đ</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Vận chuyển</span>
+          <span>Miễn phí</span>
+        </div>
+
+        <div class="summary-total">
+          <span>Tổng cộng</span>
+          <span id="cart-total">0đ</span>
+        </div>
+
+        <button class="btn btn-primary full">Thanh toán</button>
+        <a href="index.html" class="btn btn-ghost full">← Tiếp tục mua sắm</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    © DC ARGB Store • Gaming Gear
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
